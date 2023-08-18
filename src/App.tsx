@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ListaPersonasCP from "./components/Listapersonas";
 
+import Card from "./components/Card.tsx";
+
 export interface iPersona {
   name: String;
   mail: String;
@@ -9,6 +11,10 @@ export interface iPersona {
 
 function App() {
   const [count, setCount] = useState(10);
+
+  // const veicles: veicles = veicles.map(v =>{
+  //   return <Card titulo={v.name} descripcion={v.descripcion}/>
+  // })
 
   const handlerCount = (count: number) => {
     setCount(count);
